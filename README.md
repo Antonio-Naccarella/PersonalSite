@@ -1,8 +1,27 @@
-# React + Vite
+# Antonio Naccarella Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio](src/assets/img/portfolio-screen.png "Screen of the app.")
 
-Currently, two official plugins are available:
+You can try here the app: [Link](https://antonionaccarella.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
+
+This is my Portfolio where i talk about me, my projects and my aspiration.
+
+## :books: Lenguages and Tools
+
+- HTML
+- CSS
+- Sass
+- JavaScript
+- Vite
+- React
+- React-router
+- Axios
+
+## :e-mail: Contacts
+
+Get in touch
+
+- [Linkedin](https://www.linkedin.com/in/antonio-naccarella-31976725a/)
+- E-mail: naccarellaantonio25@gmail.com
