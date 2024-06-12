@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Mochiy+Pop+P+One&display=swap");
+$main-color: rgb(0, 0, 0);
+$sfondo: rgb(255, 255, 255);
+$second-color: rgba(0, 0, 0, 0.3);
+$font: "Itim", cursive;
+
+body {
+  min-height: 100vh;
+  font-family: $font;
+  font-size: 20px;
+  background-color: $sfondo;
+}
+
+// .about {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 20px;
+//   align-items: center;
+// }
+
+// .about img {
+//   width: 100%;
+//   border-radius: 3%;
+//   border: 1px solid $second-color;
+// }
+// section {
+//   width: 70%;
+//   margin: 0 auto;
+//   line-height: 1em;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 30px;
+// }
+
+// .bakery,
+// .dna {
+//   margin-top: 50px;
+//   gap: 20px;
+//   display: flex;
+//   flex-direction: column-reverse;
+// }
+
+// .projects img {
+//   max-width: 100%;
+//   border-radius: 2%;
+//   border: 1px solid $second-color;
+// }
+
+// .card img {
+//   max-width: 30px;
+//   gap: 20px;
+// }
+// .card {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 20px;
+// }
+// .card a {
+//   text-decoration: none;
+//   color: $main-color;
+// }
+// .card a:hover {
+//   color: $second-color;
+//   text-decoration: underline;
+// }
+
+// .contacts-form {
+//   width: 80%;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 20px;
+//   padding: 20px;
+//   border-radius: 30px;
+//   border: 1px solid $second-color;
+// }
+// .contacts-form input,
+// .contacts-form textarea {
+//   border-radius: 10px;
+//   border: 1px solid $second-color;
+//   width: 150px;
+//   height: 30px;
+//   outline: none;
+//   padding: 10px;
+//   font-weight: 500;
+// }
+// .form-input {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 10px;
+// }
+// .contacts-form textarea {
+//   height: 60px;
+//   width: 100%;
+// }
+
+// .contacts-form button {
+//   margin: 0 auto;
+//   width: 50%;
+//   height: 40px;
+//   border-radius: 15px;
+//   border: 1px solid $second-color;
+//   background: $sfondo;
+// }
+
+// footer {
+//   margin-top: auto;
+//   height: 150px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 30px;
+//   background-color: $main-color;
+//   color: $sfondo;
+//   font-size: 20px;
+// }
+// footer img {
+//   max-width: 30px;
+// }
+// .freccia {
+//   margin-right: 30px;
+//   float: right;
+//   transform: rotate(-90deg) scale(0.8);
+//   transition: all 600ms ease-in-out;
+// }
+// .freccia:hover {
+//   transform: rotate(270deg) scale(1);
+//   transition: all 600ms ease-in-out;
+// }
+
+// @media (min-width: 800px) {
+//   .testo {
+//     width: 60%;
+//   }
+
+//   .about {
+//     flex-direction: row;
+//     justify-content: center;
+//   }
+//   .about img {
+//     max-width: 400px;
+//   }
+//   .bakery,
+//   .dna {
+//     flex-direction: row;
+//     align-items: center;
+//   }
+//   .dna {
+//     flex-direction: row-reverse;
+//   }
+//   .bakery img {
+//     max-width: 35%;
+//   }
+//   .dna img {
+//     max-width: 50%;
+//   }
+
+//   .contacts-form textarea {
+//     width: 70%;
+//   }
+// }

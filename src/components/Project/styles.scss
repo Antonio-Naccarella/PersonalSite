@@ -1,0 +1,31 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.project-card {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  div {
+    width: 80%;
+    max-width: 500px;
+    line-height: 1.7rem;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}
+.project-text {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
