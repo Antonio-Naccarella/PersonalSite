@@ -11,9 +11,8 @@ export default function Projects() {
       <Project
         name="Global Warming"
         img={globalWarmingScreen}
-        description="Piattaforma finalizzata alla sesibilizzazione sul riscaldamento
-              globale. Attraverso grafici riporta dati, raccolti da un API, sui maggiori elementi di
-              inquinamento."
+        description="Sito che invita a riflettere sul tema cambiamento climatico.
+        Raccoglie dati tramite un API, e li visualizza in grafici con Recharts."
         link="https://globallwarming.netlify.app/"
         react={true}
       />
