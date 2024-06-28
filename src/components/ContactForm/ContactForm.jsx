@@ -55,6 +55,7 @@ export default function ContactForm() {
             value={params.from_name}
             onChange={handleChange}
             name="from_name"
+            required
           ></input>
           <input
             type="email"
@@ -62,6 +63,7 @@ export default function ContactForm() {
             value={params.from_email}
             onChange={handleChange}
             name="from_email"
+            required
           ></input>
           <input
             type="text"
@@ -69,6 +71,7 @@ export default function ContactForm() {
             value={params.message}
             onChange={handleChange}
             name="message"
+            required
           ></input>
           <button type="submit">Invia</button>
         </form>
