@@ -5,12 +5,12 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Itim&family=Mochiy+Pop+P+One&display=swap");
 $main-color: rgb(0, 0, 0);
-$sfondo: rgb(255, 255, 255);
+$sfondo: rgb(35, 34, 34);
 $second-color: rgba(0, 0, 0, 0.3);
 $font: "Itim", cursive;
 
 body {
   font-family: $font;
-  font-size: 20px;
   background-color: $sfondo;
+  color: #fff;
 }

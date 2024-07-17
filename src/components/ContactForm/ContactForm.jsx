@@ -1,7 +1,7 @@
 import { useState } from "react"
 import axios from "axios"
 import "./styles.scss"
-import { ColorRing } from "react-loader-spinner"
+import { MutatingDots } from "react-loader-spinner"
 
 const serviceId = import.meta.env.VITE_SERVICE_ID
 const templateId = import.meta.env.VITE_TEMPLATE_ID
@@ -42,6 +42,7 @@ export default function ContactForm() {
     } catch (error) {
       console.error(error)
       setIsLoading(false)
+      alert("Messaggio non inviato!")
     }
   }
 
@@ -85,14 +86,16 @@ export default function ContactForm() {
 function Loading() {
   return (
     <div className="message-container">
-      <ColorRing
+      <MutatingDots
         visible={true}
-        height="80"
-        width="80"
-        ariaLabel="color-ring-loading"
+        height="150"
+        width="150"
+        color="#1a6d8e"
+        secondaryColor="beige"
+        radius="12.5"
+        ariaLabel="mutating-dots-loading"
         wrapperStyle={{}}
-        wrapperClass="color-ring-wrapper"
-        colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
+        wrapperClass=""
       />
     </div>
   )

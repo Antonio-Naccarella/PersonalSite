@@ -1,34 +1,67 @@
-.presentation-container {
-  margin-top: 50px;
-  height: 100%;
+.home {
+  height: 100vh;
+  background: rgb(35, 34, 34);
+  display: flex;
+}
+
+.intro {
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.presentation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 70px;
-}
-
-.card-presentation {
-  width: 90%;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.box-img {
-  width: 250px;
+.avatar {
+  width: 60%;
+  border: 4px solid #1a6d8e9f;
   aspect-ratio: 1;
-  background: url(../../assets/img/foto-profilo-linkedin.jpg) 100% center /
-    cover;
+  background: url(../../assets/img/myAvatar.png) 100% center / cover;
   animation: radius 8s linear infinite;
+}
+
+.menu {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  ul,
+  a {
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6em;
+    line-height: 1.8em;
+  }
+  li {
+    position: relative;
+    transition: all ease-in 100ms;
+
+    &::before {
+      position: absolute;
+      bottom: 12px;
+      content: "";
+      width: 0;
+      height: 15px;
+      border-radius: 5px;
+      background: #1a6d8e9f;
+      transition: all ease-in 200ms;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all ease-in 100ms;
+
+      &::before {
+        width: 80%;
+        transition: all ease-in 200ms;
+      }
+    }
+  }
 }
 
 @keyframes radius {
@@ -41,13 +74,5 @@
   }
   66% {
     border-radius: 20% 80% 20% 80% / 50% 45% 55% 50%;
-  }
-}
-
-@media (min-width: 800px) {
-  .presentation {
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
   }
 }

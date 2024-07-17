@@ -6,7 +6,8 @@ You can try here the app: [Link](https://antonionaccarella.netlify.app)
 
 ## Description
 
-This is my Portfolio where i talk about me, my projects and my aspiration.
+Project made for [Start2Impact Uiversity](https://www.start2impact.it/).
+Personal site that talk about me, and it includes my best projects.
 
 ## :books: Lenguages and Tools
 

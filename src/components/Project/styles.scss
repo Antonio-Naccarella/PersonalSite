@@ -1,31 +1,48 @@
 .project {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  background: #fff;
+  color: black;
+  margin-bottom: 30px;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.img,
+.info {
+  width: 50%;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
 }
 
-.project-card {
-  margin: 0 auto;
+.text {
+  width: 60%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 
-  div {
-    width: 80%;
-    max-width: 500px;
-    line-height: 1.7rem;
+  a {
+    text-decoration: none;
+    color: #1a6d8e9f;
 
-    img {
-      width: 100%;
-      border-radius: 5px;
+    &:hover {
+      color: #383fcd;
     }
   }
 }
-.project-text {
-  margin: 0 auto;
-  margin-bottom: 30px;
+.img {
+  h3 {
+    font-size: 3em;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }

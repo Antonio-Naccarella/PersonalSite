@@ -1,29 +1,37 @@
-import Lenguages from "../../components/Lenguages/Lenguages"
-import Profiles from "../../components/Profiles/Profiles"
+import { Link } from "react-router-dom"
+import About from "../About/About"
+import Contacts from "../Contacts/Contacts"
+import Footer from "../../components/Footer/Footer"
 import "./styles.scss"
+
 export default function Home() {
   return (
-    <article className="presentation-container">
-      <section className="presentation">
-        <div className="box-img"></div>
-        <div className="card-presentation">
-          <h2>Antonio Naccarella</h2>
-          <h1>Frontend Developer</h1>
-          <p>
-            Ciao, sono Antonio, amo la tecnologia, la cucina, il mare e lo
-            sport.
-          </p>
+    <>
+      <main>
+        <article className="home">
+          <section className="intro">
+            <div className="avatar"></div>
+          </section>
 
-          <Lenguages
-            html={true}
-            css={true}
-            sass={true}
-            js={true}
-            react={true}
-          />
-          <Profiles />
-        </div>
-      </section>
-    </article>
+          <nav className="menu">
+            <h1>Antonio Naccarella</h1>
+            <ul>
+              <li style={{ marginLeft: "20px" }}>
+                <Link to="/projects">Progetti</Link>
+              </li>
+              <li style={{ marginLeft: "50px" }}>
+                <a href="#about">Su di me</a>
+              </li>
+              <li style={{ marginLeft: "70px" }}>
+                <a href="#contact">Contatto</a>
+              </li>
+            </ul>
+          </nav>
+        </article>
+        <About />
+        <Contacts />
+      </main>
+      <Footer />
+    </>
   )
 }

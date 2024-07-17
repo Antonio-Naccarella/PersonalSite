@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&family=Mochiy+Pop+P+One&display=swap");
 $font: "Itim", cursive;
 
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .contact-form {
   width: 80%;
   max-width: 400px;
   aspect-ratio: 1;
   animation: radius 20s linear infinite;
-  background: rgb(143, 188, 223);
-  box-shadow: 6px 8px 10px 0 rgb(141, 141, 141);
+  background: #1a6d8e;
+  box-shadow: 6px 8px 10px 0 rgb(31, 80, 95);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,8 +30,8 @@ $font: "Itim", cursive;
       padding: 1rem;
       border-radius: 1rem;
       background: #e8e8e8;
-      box-shadow: 5px 5px 8px rgba(208, 146, 14, 1),
-        -5px -3px 7px rgba(212, 138, 174, 1);
+      box-shadow: 5px 5px 8px rgb(55, 115, 110),
+        -5px -3px 7px rgba(21, 20, 20, 0.758);
       transition: 0.3s;
 
       &:focus {
@@ -44,13 +50,14 @@ $font: "Itim", cursive;
       border: none;
       box-shadow: 3px 5px 5px 0 rgb(79, 78, 78);
       border-radius: 1rem;
-      background: rgb(0, 0, 90);
-      color: rgb(232, 232, 232);
+      background: beige;
+      // background: rgb(0, 0, 90);
+      color: black;
       transition: all ease-in-out 320ms;
 
       &:hover {
         transform: scale(1.1);
-        box-shadow: 6px 5px 5px 0 rgb(230, 229, 229);
+        box-shadow: 6px 5px 5px 0 rgb(18, 29, 74);
         transition: all ease-in-out 320ms;
       }
     }
@@ -91,9 +98,10 @@ $font: "Itim", cursive;
 
 .message-content {
   height: 100%;
-  background: rgb(229, 230, 229);
+  background: beige;
   box-shadow: 5px 5px 5px black;
-  border-top: 6px solid rgb(5, 81, 5);
+  // border-top: 6px solid rgb(5, 81, 5);
+  color: black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -107,19 +115,20 @@ $font: "Itim", cursive;
   }
 
   button {
-    background: rgb(88, 160, 100);
+    background: #1a6d8e;
     padding: 10px 30px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
     font-weight: 700;
     font-size: 1.2rem;
+    transition: all ease-in 150ms;
     color: rgb(49, 49, 49);
 
     &:hover {
-      background: rgb(5, 81, 5);
-      color: #d4d2d2;
+      background: #3a9fc6;
       transform: scale(1.1);
+      transition: all ease-in 150ms;
     }
   }
 }
